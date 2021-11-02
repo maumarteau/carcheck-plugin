@@ -1,12 +1,26 @@
 {
-  "name": "ck-plugin",
+  "name": "carcheck",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-library" : "vue-cli-service build --target lib --name carcheck ./src/install.js"
   },
+  "author": {
+    "name": "Maurice Marteau",
+    "email": "mauricemarteau.web@gmail.com"
+  },
+  
+  "main" : ".dist/carcheck.common.js",
+
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
